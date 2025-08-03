@@ -8,8 +8,10 @@ jobs:
         - name: Checkout Repo
           uses: actions/checkout@v4  #to read code from repo
 
-        -name: List Repo files
+        - name: List Repo Files
           run: ls-ltra
 
         - name: Executing Shell Script
-          run: ./ascii-script.sh
+          run: |
+            chmod +x ascii-script.sh
+            ./ascii-script.sh
