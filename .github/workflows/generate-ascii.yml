@@ -9,7 +9,7 @@ jobs:
           uses: actions/checkout@v4  #to read code from repo
 
         - name: List Repo Files
-          run: ls-ltra
+          run: ls -ltra
 
         - name: Executing Shell Script
           run: |
